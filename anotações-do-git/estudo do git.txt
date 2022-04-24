@@ -1,0 +1,122 @@
+                                       GIT 
+
+
+
+                                 -WINDOWS TERMINAL-
+
+
+
+dir = 'diretorios' = lista os arquivos                
+
+cd/ = 'change diretorios' = anda pelos arquivos           ex: cd windos
+
+mkdir = 'make directors' = cria arquivos 
+
+del/rmdir = 'deleta/remove directtors' => deleta pastas/ remove arquivos
+
+cls = 'clear scren' = limpa o terminal                   (unix = ctrl+L)
+
+echo = ecoa para ver se n tem um igual 
+
+> = cria pastas                                           ex:echo texto q vc quer salvar > texto_nome.txt
+
+pwd = ? = mostra onde vc ta 
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+___________________________________________________________________________________________________________________________________________________________________________________________
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+
+
+                                  -GIT TEORIA-
+
+
+
+*codificação:
+
+     - sha1 = codficação em 40 caracteres (
+ 
+codigo ate agr aprendido  -> openssl sha1
+).
+
+
+            sha1 é a forma de codificar qualquer objeto dentro do git
+            então se uma virgula mudar, todo sha1 do commit muda
+            sendo assim muito mais facil observa mudanças no codigo
+
+   
+ *objetos:
+     
+            o git trabalha  com dados como objetos, foi apresentado os :
+
+
+
+      - blobs  
+              
+            blob é um objeto que contem meta dados do git(tipo,tamanho do arquivo,....),                  
+     
+      
+
+      - trees
+
+            trees armazena e apontando blobs diferentes e commites,
+            tambem contem meta dados (\0), guarda o nome do arquivo, e 
+            responasvel por monta a estrutura onde estão localizados os
+            arquivos, tambem possui o sha1 dos seus dados
+
+                     trees pode aponta para blobs e trees.
+
+      
+      - commit 
+    
+            commit é o mais importanate, ele junta tudo, todos os objetos
+            mas tambem inclui: parent(ultimo commite realizando antes dele),
+            autor(quem criou o commit), para uma mensagem(oq esses arquivos fazem),
+            e para um timestamp(quando foi criado).
+
+
+         
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+___________________________________________________________________________________________________________________________________________________________________________________________
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+                                 -GIT BASH-
+
+
+ 
+     * OQUE É: 
+  
+
+            um terminal onde voçe usa codigos para inicsr e administrar seu git
+
+
+
+
+     * comaandos 
+
+
+            ls = list = lista oq tem na pasta                     -flags : -a para arquivos ocultos
+                                                                     
+            git config = configura seu git em :  --globsl   : --user.email     / pode de usar --unset para cancelar a mudança         
+                                              :  --local    : --user.name      /
+                                                                      
+            git add = adiciona dados ao staged                    -flags : * para adicionar todos dados unstaged
+
+            git commit = move os dados do staged ao commit        -flags : -m adiciona uma mensagem ao commit 
+            
+            git status =  monitora os status dos arquivos (unmodified\modified\staged\tracked\untracked)   
+
+            mv = movo aquivos no git                              -ex: mv strogonoff.med ./receitas/ (move strogonoff.md para receitas)
+                              
+            git push origin master = envia seu git ao repositorio remoto
+          
+            git pull origin master = puxa o git remoto ao repositorio local
+             
+            git clone = clona um repositorio
+
