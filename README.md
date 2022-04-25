@@ -1,3 +1,3 @@
-# anotações
+# anotações 🗒️
 
-aqui vou apresenta-los todo conteudo por mim adquirido 
+**aqui vou apresenta-los todo conteudo por mim adquirido**
