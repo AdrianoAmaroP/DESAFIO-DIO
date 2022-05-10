@@ -1,0 +1,66 @@
+javaScript
+
+variaveis podem ser: *number (infinity
+                             (NaN
+                     *string
+                     *boolean
+                     *null
+                     *undefined
+                     *object (array
+                     *function
+
+operadores: *aritimeticos -> adição(+), subtração(-), multiplicação(*), divisão(/), resto da divisão(%), potencia(**)
+            *atribuição   -> adição (n += 4), subtração (n -= 4), multiplicação (n *= 4), divisão (n /= 4), potencia (n **= 4), resto da divisão (n %= 4)
+            *relacionais  -> maior que(>), menor que(<), maior ou igual que(>=), menor ou igual que(<=), igual(==), diferente(!=), identico(===)
+            *lógicos      -> negação (!), conjunção:tem q comprir os 2 reqisitos (&&), disjunção:um ou outro(||)   (ex: idade >=15 && idade <= 17 //a idade está entre 15 e 17?) (Ex: estado == 'RJ' || estado == 'SP' //estado é RJ ou SP?)
+            *ternários    -> (?)aprovado, (:)reprovado
+
+comandos:
+
+
+BR
+Pesquisar
+
+
+
+
+
+
+Imagem do avatar
+
+<script> -> abre um comando em javaScript no html
+
+node-> abre o node no terminal
+
+typeof -> mostra o tipo de variavel 
+
+window(.prompt  -> abre uma janela pra vc escrever
+      (.alert   -> abre uma mensagem em uma janela 
+      (.confirm -> abre uma janela para confirmar
+
+var / let -> cria uma variavel
+
++ -> concatenação ou adição
+
+umber(n) -> transorma em numero :( number.parseInt(n)           ) para expecifica
+                                 ( number.parseFloat(n)         )
+
+string(n) -> tranforma em string  /  n.toString()
+
+`` -> crase para formatar strings
+${} -> tamplatescripts usa para concatenar strings   (Ex: `seu nome é ${}`
+
+nome da variavel.length -> quantos caracteres a string tem
+nome da variavel.toUpperCase() -> tudo MAIUSCULO
+nome da variavel.toLowerCasa() -> tudo minusculo
+
+nome da variavel de numeros.toFixed() -> para fromatar variaveis numericos
+nome da variavel de numeros.toLocaleString('pt-BR",{style:'currency',currency'BRL'}) -> para dinheiro em real brasileiro
+
+document.getElementsByTagName('tag do q vc quer pegar')[0]      -> seleciona elemento do DOM por tag
+document.getElementById('id do q vc quer pegar')                -> seleciona elemento do DOM por id
+document.getElementsByName('nome do q vc quer pegar')[0]        -> seleciona elemento do DOM por nome
+document.getElementsByClassName('classe do q vc quer pegar')[0] -> seleciona elemento do DOM por classe
+document.querySelector('div#id/div.class')                      -> seleciona classe ou id por selector no DOM
+
+ 
